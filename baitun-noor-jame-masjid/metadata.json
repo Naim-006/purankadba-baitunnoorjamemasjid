@@ -1,0 +1,5 @@
+{
+  "name": "Baitun Noor Jame Masjid",
+  "description": "Official website for Puran Kadba Uttar Para Baitun Noor Jame Masjid. Support our mosque construction through donations.",
+  "requestFramePermissions": ["geolocation"]
+}
