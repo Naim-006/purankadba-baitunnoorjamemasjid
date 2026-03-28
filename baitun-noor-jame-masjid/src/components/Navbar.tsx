@@ -25,7 +25,7 @@ const Navbar = () => {
     { name: t.nav.donation, path: '/donation', icon: <HandHeart size={18} /> },
     { name: t.nav.location, path: '/location', icon: <MapPin size={18} /> },
     { name: t.nav.contact, path: '/contact', icon: <Phone size={18} /> },
-    { name: t.nav.developer, path: '/developer', icon: <Code size={18} /> },
+   
   ];
 
   return (
