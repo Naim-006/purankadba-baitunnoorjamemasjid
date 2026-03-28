@@ -7,19 +7,19 @@ const Gallery = () => {
 
   const images = [
 
-     { url: "5.jpg", title: "Structure Overview", date: "March 2026" },
-    { url: "6.jpg", title: "Pillar Detail", date: "March 2026" },
-    { url: "7.jpg", title: "Site Close-up", date: "March 2026" },
-    { url: "3.jpg", title: "Architectural Plan", date: "March 2026" },
-    { url: "0.jpg", title: "Foundation & Pillars", date: "March 2026" },
-    { url: "1.jpg", title: "Site Progress", date: "March 2026" },
-    { url: "2.jpg", title: "Construction View", date: "March 2026" },
+    { url: "/5.jpg", title: "Structure Overview", date: "March 2026" },
+    { url: "/6.jpg", title: "Pillar Detail", date: "March 2026" },
+    { url: "/7.jpg", title: "Site Close-up", date: "March 2026" },
+    { url: "/3.jpg", title: "Architectural Plan", date: "March 2026" },
+    { url: "/0.jpg", title: "Foundation & Pillars", date: "March 2026" },
+    { url: "/1.jpg", title: "Site Progress", date: "March 2026" },
+    { url: "/2.jpg", title: "Construction View", date: "March 2026" },
     
    
   ];
 
   return (
-    <div className="pt-32 pb-20 px-4">
+    <div className="pt-20 md:pt-32 pb-16 md:pb-20 px-4">
       <div className="max-w-7xl mx-auto space-y-16">
         <header className="text-center space-y-4 max-w-3xl mx-auto">
           <motion.h1
@@ -37,7 +37,7 @@ const Gallery = () => {
           />
         </header>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
           {images.map((img, i) => (
             <motion.div
               key={i}

@@ -22,13 +22,13 @@ const Developer = () => {
   ];
 
   return (
-    <div className="pt-32 pb-20 px-4">
-      <div className="max-w-5xl mx-auto space-y-16">
+    <div className="pt-20 md:pt-32 pb-16 md:pb-20 px-4">
+      <div className="max-w-5xl mx-auto space-y-12 md:space-y-16">
         <header className="text-center space-y-4">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-bold text-slate-900"
+            className="text-3xl md:text-5xl font-bold text-slate-900"
           >
             {t.developer.title}
           </motion.h1>
@@ -39,7 +39,7 @@ const Developer = () => {
           />
         </header>
 
-        <div className="grid md:grid-cols-5 gap-12 items-start">
+        <div className="grid md:grid-cols-5 gap-8 md:gap-12 items-start">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -50,7 +50,7 @@ const Developer = () => {
               <div className="absolute inset-0 bg-primary rounded-full rotate-6 group-hover:rotate-3 transition-transform w-48 h-48 mx-auto" />
               <div className="relative w-48 h-48 rounded-full overflow-hidden shadow-2xl border-4 border-white">
                 <img 
-                  src="dev.jpg" 
+                  src="/dev.jpg" 
                   alt="Naim Hossian" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
