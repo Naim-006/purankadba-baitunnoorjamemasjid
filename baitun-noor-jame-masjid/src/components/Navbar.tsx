@@ -35,23 +35,19 @@ const Navbar = () => {
         scrolled ? 'bg-white/90 backdrop-blur-lg shadow-md py-2' : 'bg-transparent'
       )}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+      {/* Desktop layout */}
+      <div className="hidden md:flex max-w-7xl mx-auto items-center justify-between">
         <Link to="/" className="flex items-center gap-2 group">
           <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform">
             <MosqueIcon size={20} fill="currentColor" />
           </div>
-          <div className="hidden sm:block">
-            <h1 className="text-sm font-bold text-primary leading-tight">
-              Baitun Noor
-            </h1>
-            <p className="text-[10px] text-slate-500 uppercase tracking-widest">
-              Jame Masjid
-            </p>
+          <div>
+            <h1 className="text-sm font-bold text-primary leading-tight">Baitun Noor</h1>
+            <p className="text-[10px] text-slate-500 uppercase tracking-widest">Jame Masjid</p>
           </div>
         </Link>
 
-        {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="flex items-center gap-8">
           {navLinks.map((link) => (
             <Link
               key={link.path}
@@ -64,7 +60,6 @@ const Navbar = () => {
               {link.name}
             </Link>
           ))}
-          
           <button
             onClick={() => setLanguage(language === 'bn' ? 'en' : 'bn')}
             className="flex items-center gap-1 text-xs font-bold bg-slate-100 px-3 py-1.5 rounded-full hover:bg-primary hover:text-white transition-all"
@@ -73,16 +68,30 @@ const Navbar = () => {
             {language === 'bn' ? 'English' : 'বাংলা'}
           </button>
         </div>
+      </div>
 
-        {/* Mobile Toggle */}
-        <div className="flex md:hidden items-center gap-2">
+      {/* Mobile layout — 3-column grid so donate button is perfectly centered */}
+      <div className="grid md:hidden grid-cols-3 items-center">
+        {/* Left: Logo */}
+        <Link to="/" className="flex items-center gap-2 group justify-self-start">
+          <div className="w-9 h-9 bg-primary rounded-full flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform">
+            <MosqueIcon size={18} fill="currentColor" />
+          </div>
+        </Link>
+
+        {/* Center: Donate button */}
+        <div className="flex justify-center">
           <Link
             to="/donation"
-            className="flex items-center gap-1.5 bg-primary text-white px-3 py-2 rounded-xl text-xs font-bold shadow-lg shadow-primary/20 active:scale-95 transition-all"
+            className="flex items-center gap-1.5 bg-primary text-white px-4 py-2 rounded-xl text-xs font-bold shadow-lg shadow-primary/20 active:scale-95 transition-all"
           >
             <MosqueIcon size={14} fill="currentColor" />
             {t.hero.cta}
           </Link>
+        </div>
+
+        {/* Right: Lang toggle + Menu */}
+        <div className="flex items-center gap-1.5 justify-self-end">
           <button
             onClick={() => setLanguage(language === 'bn' ? 'en' : 'bn')}
             className="text-[10px] font-bold bg-slate-100 px-2 py-2 rounded-xl"

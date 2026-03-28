@@ -11,9 +11,9 @@ const Home = () => {
   const [currentSlide, setCurrentSlide] = React.useState(0);
 
   const galleryImages = [
-    "/0.jpg",
-    "/5.jpg",
-    "/6.jpg",
+    "/gallery/0.jpg",
+    "/gallery/5.jpg",
+    "/gallery/6.jpg",
   ];
 
   const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % galleryImages.length);
@@ -244,7 +244,7 @@ const Home = () => {
             className="relative w-full aspect-square md:aspect-square rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl"
           >
             <img
-              src="/3.jpg"
+              src="/gallery/3.jpg"
               alt="Mosque Architectural Plan"
               className="w-full h-full object-cover"
             />

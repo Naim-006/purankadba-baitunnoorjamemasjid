@@ -7,13 +7,13 @@ const Gallery = () => {
 
   const images = [
 
-    { url: "/5.jpg", title: "Structure Overview", date: "March 2026" },
-    { url: "/6.jpg", title: "Pillar Detail", date: "March 2026" },
-    { url: "/7.jpg", title: "Site Close-up", date: "March 2026" },
-    { url: "/3.jpg", title: "Architectural Plan", date: "March 2026" },
-    { url: "/0.jpg", title: "Foundation & Pillars", date: "March 2026" },
-    { url: "/1.jpg", title: "Site Progress", date: "March 2026" },
-    { url: "/2.jpg", title: "Construction View", date: "March 2026" },
+    { url: "/gallery/5.jpg", title: "Structure Overview", date: "March 2026" },
+    { url: "/gallery/6.jpg", title: "Pillar Detail", date: "March 2026" },
+    { url: "/gallery/7.jpg", title: "Site Close-up", date: "March 2026" },
+    { url: "/gallery/3.jpg", title: "Architectural Plan", date: "March 2026" },
+    { url: "/gallery/0.jpg", title: "Foundation & Pillars", date: "March 2026" },
+    { url: "/gallery/1.jpg", title: "Site Progress", date: "March 2026" },
+    { url: "/gallery/2.jpg", title: "Construction View", date: "March 2026" },
     
    
   ];

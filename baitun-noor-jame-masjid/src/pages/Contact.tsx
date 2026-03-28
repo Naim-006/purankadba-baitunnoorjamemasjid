@@ -65,7 +65,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-xs font-bold uppercase tracking-widest opacity-60">Visit Us</p>
-                    <p className="text-xl font-bold">Puran Kadba, Chandpur</p>
+                    <p className="text-xl font-bold">Puran Kadba, Barura, Cumilla</p>
                   </div>
                 </div>
               </div>
