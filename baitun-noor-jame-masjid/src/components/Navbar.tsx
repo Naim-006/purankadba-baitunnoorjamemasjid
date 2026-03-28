@@ -71,7 +71,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile layout — 3-column grid so donate button is perfectly centered */}
-      <div className="grid md:hidden grid-cols-3 items-center">
+      <div className="grid md:hidden grid-cols-[1fr_auto_1fr] items-center">
         {/* Left: Logo */}
         <Link to="/" className="flex items-center gap-2 group justify-self-start">
           <div className="w-9 h-9 bg-primary rounded-full flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform">
