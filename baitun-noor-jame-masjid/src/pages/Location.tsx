@@ -34,7 +34,7 @@ const Location = () => {
           className="relative w-full aspect-video md:aspect-[21/9] rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white"
         >
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d915.4926253119227!2d91.05386776957126!3d23.389284398682417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375463003f9dc495%3A0x12a0e2498afc397!2sPuran%20Kadba%20Uttar%20Para%20Baitun%20Noor%20Jame%20Masjid!5e0!3m2!1sen!2sbd!4v1774671406064!5m2!1sen!2sbd"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.970501794038!2d91.05193657510348!3d23.38928437891848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375463003f9dc495%3A0x12a0e2498afc397!2sPuran%20Kadba%20Uttar%20Para%20Baitun%20Noor%20Jame%20Masjid!5e0!3m2!1sen!2sbd!4v1774898778112!5m2!1sen!2sbd"
             width="100%"
             height="100%"
             style={{ border: 0 }}
