@@ -45,7 +45,7 @@ const Location = () => {
           />
           <div className="absolute bottom-6 right-6">
             <a
-              href="https://www.google.com/maps/search/?api=1&query=Puran+Kadba+Nabab+Bari+Jame+Masjid"
+              href="https://maps.app.goo.gl/4M4zCqfAvamWkePU9"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-slate-900 px-6 py-3 rounded-xl font-bold shadow-xl flex items-center gap-2 hover:bg-primary hover:text-white transition-all"
